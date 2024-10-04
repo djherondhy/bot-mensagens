@@ -24,7 +24,7 @@ def verificar_envio():
     try:
         # Aguarda a presença do indicador de mensagem enviada
         WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, 'span[data-icon="msg-check"]'))
+            EC.presence_of_element_located((By.CSS_SELECTOR, 'span[data-icon="msg-dblcheck"]'))
         )
         return True
     except Exception:
